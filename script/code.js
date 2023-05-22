@@ -1,24 +1,8 @@
 
- // }
-//  
-//     
-// break;
 let sum ='';
 let calculation = [];
 let result = document.querySelector('#display');
 let numbers = document.querySelectorAll('.numbers');
-
-//     function check(){
-//         if(document.getElementById('display').value.includes(`.`)) {
-            //         document.getElementById('display').value = document.getElementById('display').value
-            //     } else {
-            //         sum += symbol
-            //         document.getElementById('display').value = sum
-            //         check.push(symbol)
-            //     }
-//     }
-// }
-
 
     function operators(symbol){
     let resultArr = result.value.split(' ');
@@ -59,9 +43,17 @@ let numbers = document.querySelectorAll('.numbers');
         
     }
 }
-
 numbers.forEach(number => number.addEventListener('click', (event) => {
-    result.value += event.target.value;
+    let value = event.target.value;
+    if (value === '.') {
+        if (!result.value.includes('.')) {
+            result.value += value;
+        }
+    } 
+    else {
+        result.value += value;
+    }
+
 }));
 
 document.querySelector('#CE').addEventListener('click', ()=>{
