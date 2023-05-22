@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="./CSS/style.css">
+</head>
+<body>
+
+    <div class="container">
+        <div  class="calculator">
+            <form>
+                <div>
+                    <input id="display" type="text" name="display">
+                </div>
+                <div>
+                    <input id="AC" type="button" value="AC">
+                    <input class="numbers" type="button" value="0" >
+                    <input id="CE" type="button" value="CE">
+                    <input class="operator" id="add" type="button" value="+" onclick="operators('+')">
+                </div>
+                <div>
+                    <input class="numbers" type="button" value="1" >
+                    <input class="numbers" type="button" value="2" >
+                    <input class="numbers" type="button" value="3">
+                    <input class="operator" id="minus" type="button" value="-" onclick="operators('-')">
+                </div>
+                <div>
+                    <input class="numbers" type="button" value="4">
+                    <input class="numbers" type="button" value="5">
+                    <input class="numbers" type="button" value="6">
+                    <input class="operator" id="multiply" type="button" value="*" onclick="operators('*')">
+                </div>
+                <div>
+                    <input class="numbers" type="button" value="7">
+                    <input class="numbers" type="button" value="8">
+                    <input class="numbers" type="button" value="9">
+                    <input class="operator" id="divide" type="button" value="/" onclick="operators('/')">
+                </div>
+                <div>
+                    <input class="numbers" id="point" type="button" value=".">
+                    <input class="numbers" id="openBracket" type="button" value="(">
+                    <input class="numbers" id="closeBracket" type="button" value=")">
+                    <input class="operator" id="equal" type="button" value="=" onclick="operators('=')">
+                </div>
+            </form>
+        </div>
+    </div>
+    <script src="./script/code.js"></script>
+</body>
+</html>
