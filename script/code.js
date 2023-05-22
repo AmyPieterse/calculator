@@ -38,7 +38,7 @@ let numbers = document.querySelectorAll('.numbers');
             }
         break;
         case '=':
-            result.value = eval(result.value);
+            result.value = eval(result.value).toFixed(2);
         break;
         
     }
