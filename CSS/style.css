@@ -14,13 +14,24 @@
 
 .calculator{
     background-color: rgb(18, 194, 182);
-    padding: 20px;
+    /* padding: 20px; */
     border-radius: 10px;
+}
+
+form{
+    margin: 1rem;
+}
+
+form div{
+    display: flex;
+    justify-content: center;
 }
 
 #display{
     width: 100%;
     margin: auto;
+    padding: 0 2rem;
+    text-align: end;
     margin-bottom: .5rem;
     box-shadow: none;
     background-color: #ffffff;

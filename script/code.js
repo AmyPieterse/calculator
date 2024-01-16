@@ -38,7 +38,7 @@ let numbers = document.querySelectorAll('.numbers');
             }
         break;
         case '=':
-            result.value = eval(result.value).toFixed(2);
+            result.value = eval(result.value);
         break;
         
     }
@@ -60,11 +60,10 @@ document.querySelector('#CE').addEventListener('click', ()=>{
     let output = result.value;
     result.value = output.slice(0, -1);
 })
+
 function clear() {
     result.value = "";
 }
 document.querySelector('#AC').addEventListener('click', ()=>{
     clear(); 
 })
-
-//function isButtonClicked()
